@@ -9,10 +9,10 @@ namespace monster_csharp
     class Monster
     {
         public string name;
-        public int hp;
-        public int damage;
+        public string hp;
+        public string damage;
 
-        public Monster(string name, int hp, int damage)
+        public Monster(string name, string hp, string damage)
         {
             this.name   = name;
             this.hp     = hp;

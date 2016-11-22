@@ -17,10 +17,16 @@ namespace monster_csharp
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void buttonConferma_Click(object sender, EventArgs e)
         {
-            Monster m  = new Monster("Pikachu", 50, 10);
-            Monster m2 = new Monster("Squirtle", 30, 14);
+            Monster m1 = new Monster(name1Txt.Text, hp1Txt.Text, damage1Txt.Text);
+            Monster m2 = new Monster(name2Txt.Text, hp2Txt.Text, damage2Txt.Text);
+
+            //Form2 riepilogoMostri = new Form2();
+            //this.Visible = false;
+            //riepilogoMostri.ShowDialog();
+            //this.Close;
+
         }
     }
 }
