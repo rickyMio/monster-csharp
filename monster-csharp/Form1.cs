@@ -22,10 +22,11 @@ namespace monster_csharp
             Monster m1 = new Monster(name1Txt.Text, hp1Txt.Text, damage1Txt.Text);
             Monster m2 = new Monster(name2Txt.Text, hp2Txt.Text, damage2Txt.Text);
 
-            //Form2 riepilogoMostri = new Form2();
-            //this.Visible = false;
-            //riepilogoMostri.ShowDialog();
-            //this.Close;
+            Form2 riepilogoMostri = new Form2();
+            this.Visible = false;
+            riepilogoMostri.ShowDialog();
+            
+           
 
         }
     }
