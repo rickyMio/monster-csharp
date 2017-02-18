@@ -9,6 +9,7 @@ namespace monster_csharp
 {
     class Monster
     {
+<<<<<<< HEAD
         private string _name;
         public string name { get { return _name; } }
 
@@ -69,10 +70,24 @@ namespace monster_csharp
 
             this.healFactor = healFactor;
             Console.WriteLine("test " + _healFactor);
+=======
+        public string name;
+        public string maxHp;
+        public string curHp;
+        public string damage;
+
+        public Monster(string name, string maxHp, string damage)
+        {
+            this.name = name;
+            this.maxHp = maxHp;
+            curHp = maxHp;
+            this.damage = damage;
+>>>>>>> a16903a26147f3420febebafbecaca5fdaeeab2c
             describe();
         }
 
         public string describe()
+<<<<<<< HEAD
         {
             string output = "Questo è " + name + "\r\n";
             output += "HP: " + curHp + "\r\n";
@@ -149,6 +164,19 @@ namespace monster_csharp
             {
                 Console.WriteLine("a " + target.name + " rimangono " + target.curHp + " hp");
             }
+=======
+        {
+            string output = "Questo è " + name + "\r\n";
+            output += "HP: " + curHp + "\r\n";
+            output += "DAMAGE: " + damage + "\r\n";
+
+            return output;
+        }
+
+        public void describe(TextBox t)
+        {
+            t.Text = describe();
+>>>>>>> a16903a26147f3420febebafbecaca5fdaeeab2c
         }
     }
 }
